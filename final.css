@@ -198,6 +198,9 @@ a:visited {
     margin-right: 10px;
     font-family: SVNGallery;
     font-size: 24px;
+    border-bottom: #332316 solid 1px;
+    padding-right: 10px;
+    padding-bottom: 0px;
 }
 
 
@@ -367,12 +370,12 @@ input[type=submit]:hover {
 
 .social-network-link {
     margin-right: 10px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    font-family: SVNGallery;
+    font-size: 20px;
     font-weight: 500;
     border-bottom: #332316 solid 1.5px;
     width: 150px;
-    padding: 10px 10px 10px 0px;
+    padding: 10px 10px 0px 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -400,5 +403,7 @@ input[type=submit]:hover {
 }
 
 @media (max-width: 700px) {
-
+    .navbar-fixed-top{
+        width: 100vw;
+    }
 }

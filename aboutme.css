@@ -1,0 +1,86 @@
+.first-detail{
+    margin-top: 80px;
+}
+.content-about{
+    margin: 30px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.details{
+    font-family: 'Montserrat', sans-serif;
+    color: #332316;
+    padding: 0px;
+    font-size: 20px;
+    padding: 30px 0px 30px 0px;
+    border-bottom: #332316 solid 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.place{
+    font-weight: 600;
+}
+
+.skill{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-details{
+    margin: 30px 0px;
+    width: 80%;
+}
+
+.skill-title-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: SVNGallery;
+    font-size: 44px;
+    width: 80%;
+    margin: 0px;
+}
+
+.number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f5ede0;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: #332316;
+    margin-right: 24px;
+}
+
+.title-skill{
+    color: #332316;
+}
+
+.skill-list {
+    background-color: rgba(74, 82, 64, 0.2);
+    border-radius: 30px;
+    width: 100%;
+    padding: 20px 300px 20px 100px;
+    margin-top: 20px;
+    font-weight: 500;
+    border: 1px solid #332316;
+}
+
+.skill-list ul{
+    margin: 0;
+}
+
+.skill-list li{
+    font-family: 'Montserrat', sans-serif;
+    color: #332316;
+    font-size: 20px;
+    margin: 10px 0px;
+}

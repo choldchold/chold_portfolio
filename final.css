@@ -9,6 +9,14 @@ body {
     background-color: #F5EDE0 !important;
 }
 
+.onepage {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 /* navbar */
 
 .navbar {
@@ -109,14 +117,6 @@ a:visited {
     font-size: 120px;
     color: #332316;
     overflow: hidden !important;
-}
-
-.onepage {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .page-content {
@@ -355,6 +355,7 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #332316;
 }
+
 .social-network{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;

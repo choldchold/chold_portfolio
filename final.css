@@ -3,6 +3,10 @@
     src: url(SVN-Gallery\ Modern.otf);
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     box-sizing: border-box;
     margin: 0px;

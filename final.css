@@ -5,7 +5,7 @@
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 body {
     box-sizing: border-box;
@@ -20,6 +20,8 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+
 
 /* navbar */
 
@@ -65,15 +67,21 @@ a:visited {
 
 }
 
+.nav .open a {
+    background-color: #F5EDE0 !important;
+}
+
 .dropdown-menu {
     background-color: #F5EDE0 !important;
     border: 0px !important;
     box-shadow: none !important;
+    padding: 0 !important;
 }
 
 .dropdown-menu a {
     font-size: 18px !important;
-    padding: 10px !important;
+    padding: 10px 10px !important;
+    margin: 10px 10px;
     overflow: hidden !important;
 }
 
@@ -198,16 +206,31 @@ a:visited {
     justify-content: flex-end;
 }
 
+.see-more a:hover {
+    text-decoration: none;
+}
+
 .text-seemore {
     margin-right: 10px;
     font-family: SVNGallery;
     font-size: 24px;
-    border-bottom: #332316 solid 1px;
     padding-right: 10px;
     padding-bottom: 0px;
+
 }
 
+.text-seemore::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #332316;
+    transition: width .3s;
+}
 
+.text-seemore:hover::after {
+    width: 0;
+}
 
 .see-more img {
     transform: rotate(-90deg);
@@ -245,8 +268,18 @@ a:visited {
     justify-content: center;
 }
 
+.frame-work a{
+    height: 100%;
+}
+
 .frame-work img {
     height: 100%;
+    transition-duration: 0.8s;
+}
+
+.frame-work img:hover{
+    scale: 1.5;
+    transition-duration: 0.8s;
 }
 
 .work-title {
@@ -360,14 +393,19 @@ input[type=submit]:hover {
     background-color: #332316;
 }
 
-.social-network{
+#subject{
+    height: 200px;
+}
+
+.social-network {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 24px;
     margin: 10px 0px;
 
 }
-.social-network-list{
+
+.social-network-list {
     display: flex;
     flex-direction: column;
     margin: 20px 0px;
@@ -388,6 +426,12 @@ input[type=submit]:hover {
 
 }
 
+.social-network-list a:hover {
+    transition: all 200ms ease-in;
+    border-bottom: rgba(51, 35, 22, 0) solid 1px;
+    text-decoration: none;
+}
+
 .social-network-link img {
     transform: rotate(-90deg);
     width: 20px;
@@ -397,7 +441,7 @@ input[type=submit]:hover {
 
 /* end contact */
 
-.footer{
+.footer {
     background-color: #332316;
     color: #F5EDE0;
     display: flex;
@@ -408,7 +452,81 @@ input[type=submit]:hover {
 }
 
 @media (max-width: 700px) {
-    .navbar-fixed-top{
+    .navbar-fixed-top {
         width: 100vw;
     }
+
+    .page-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .name {
+        font-size: 60px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .name-subtitle {
+        font-size: 30px;
+    }
+
+    .about-me {
+        height: 100vh;
+    }
+
+    .sparkle img {
+        height: 50px;
+    }
+
+    .title {
+        font-size: 50px;
+    }
+
+    .frame {
+        width: 75%;
+        height: 75vw;
+    }
+
+    .content {
+        width: 80%;
+        margin: 30px 0px;
+    }
+
+    .see-more {
+        justify-content: center;
+    }
+
+    .work-slider-container {
+        flex-direction: column;
+    }
+
+    .frame-work {
+        width: 68%;
+        height: 70vw;
+    }
+
+    #work {
+        margin-top: 100px;
+    }
+
+    .subtitle {
+        width: 80%;
+    }
+
+    .form {
+        width: 80%;
+    }
+label{
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+#subject{
+    height: 150px;
+}
+
 }

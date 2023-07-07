@@ -63,3 +63,18 @@ text-decoration: none !important;
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 700px) {
+    .sparkle img {
+        margin: 0px 7px;
+    }
+    .title{
+        font-size: 40px;
+    }
+    .work-details-title{
+        opacity: 1;
+    }
+    .content-work{
+        margin-bottom: 50px;
+    }
+}

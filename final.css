@@ -57,14 +57,20 @@ a {
     color: #332316 !important;
     border-bottom: #332316 solid 2px !important;
     overflow: hidden !important;
+    transition: .3s;
 }
 
-a:visited {
-    background-color: #F5EDE0 !important;
-    font-weight: 900px !important;
-    color: #332316 !important;
-    border-bottom: #332316 solid 1px !important;
+.navbar-hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #332316;
+    transition: width .3s;
+}
 
+.navbar-hover:hover::after {
+    width: 0;
 }
 
 .nav .open a {

@@ -156,7 +156,7 @@ a {
 }
 
 .frame img {
-    height: 100%;
+    height: 120%;
 }
 
 .about-me {
@@ -266,7 +266,7 @@ a {
 }
 
 .frame-work img {
-    height: 100%;
+    height: 120%;
     transition-duration: 0.5s;
 }
 

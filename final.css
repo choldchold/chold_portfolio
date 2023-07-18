@@ -448,6 +448,9 @@ input[type=submit]:hover {
 }
 
 @media (max-width: 700px) {
+body {
+    background-color: #F5EDE0 !important;
+}
     .navbar-fixed-top {
         width: 100vw;
     }
